@@ -5,6 +5,13 @@ zahl = 5
 print("Hallo Paul, eine Zahl", zahl)
 
 
+def schreibe(buchstaben=""):
+    print(buchstaben)
+
+
+schreibe(buchstaben="Hallo Paul")
+
+
 def schreibe_in_datei(dateiname="/python/test/ausgabe.txt"):
     """schreibt sehr oft "Hallo Paul" in die ausgabe.txt-Datei
     """
@@ -18,7 +25,7 @@ def schreibe_in_datei(dateiname="/python/test/ausgabe.txt"):
 def schreibe_x_mal(x, dateipfad):
     i = 0
     with (open(file=dateipfad, mode="w") as file):
-        while i < (x+1):
+        while i < (x + 1):
             file.write("Hallo Paul " + str(i) + '\n')
             i = i + 1
         file.close()
