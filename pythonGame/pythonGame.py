@@ -14,10 +14,10 @@ for nummer in range(100):
     # das innere der Schleife ist eingerückt
     print("Zahl ", nummer)
 
-pygame.init() # pygame startet
+pygame.init()  # pygame startet
 
 # Farben werden als RGB-Tupel gespeichert
-# ROT  GRÜN BLAU WERT aus 0-255
+# ROT GRÜN BLAU WERT aus 0-255
 BLUE = (0, 0, 255)
 
 # ein Screen zum Zeichnen des spiels
